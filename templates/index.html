@@ -97,7 +97,14 @@
     <div class="row text-center">
         <div class="col-sm-12">
         <h3>Hemisphere Images</h3>
-        <img class="Hemisphere Images" src= {{ listings.hemisphere_images[title] }}>
+        <img class="Hemisphere Images" src= {{ listings.hemisphere_images[0]['image_url'] }}>
+        <p>{{listings.hemisphere_images[0]['title']}}</p>
+        <img class="Hemisphere Images" src= {{ listings.hemisphere_images[1]['image_url'] }}>
+        <p>{{listings.hemisphere_images[1]['title']}}</p>
+        <img class="Hemisphere Images" src= {{ listings.hemisphere_images[2]['image_url'] }}>
+        <p>{{listings.hemisphere_images[2]['title']}}</p>
+        <img class="Hemisphere Images" src= {{ listings.hemisphere_images[3]['image_url'] }}>
+        <p>{{listings.hemisphere_images[3]['title']}}</p>
         </div>
     </div>
 

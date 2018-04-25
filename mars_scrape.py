@@ -56,10 +56,10 @@ def scrape():
     response_4 = requests.get(url_4)
     soup_4 = bs(response_4.text, 'html.parser')
     results = soup.find_all('div', class_='item')
-    cer_link = 'https://astrogeology.usgs.gov/search/map/Mars/Viking/cerberus_enhanced.tif/full.jpg'
-    sch_link = 'https://astrogeology.usgs.gov/search/map/Mars/Viking/schiaparelli_enhanced.tif/full.jpg'
-    syr_link = 'https://astrogeology.usgs.gov/search/map/Mars/Viking/syrtis_major_enhanced.tif/full.jpg'
-    val_link = 'https://astrogeology.usgs.gov/search/map/Mars/Viking/valles_marineris_enhanced.tif/full.jpg'
+    cer_link = 'https://astrogeology.usgs.gov/download/Mars/Viking/cerberus_enhanced.tif/full.jpg'
+    sch_link = 'https://astrogeology.usgs.gov/download/Mars/Viking/schiaparelli_enhanced.tif/full.jpg'
+    syr_link = 'https://astrogeology.usgs.gov/download/Mars/Viking/syrtis_major_enhanced.tif/full.jpg'
+    val_link = 'https://astrogeology.usgs.gov/download/Mars/Viking/valles_marineris_enhanced.tif/full.jpg'
     image_urls = [cer_link, sch_link, syr_link, val_link]
     titles = soup_4.find_all('h3')
     titles = [h3.text for h3 in titles]
